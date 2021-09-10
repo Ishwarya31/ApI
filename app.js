@@ -55,7 +55,7 @@ document.querySelector('#search').addEventListener('input', (event) => {
     let finalData = data.filter((id) => id.name.toLowerCase().startsWith(event.target.value.toLowerCase()))
      
     if (event.target.value === ''){
-        finalData = finalData.slice
+        finalData = finalData.slice(0,10)
     }
     if (finalData.length === 0) {
         content.innerHTML = `<div class="alert alert-danger" role="alert">
