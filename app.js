@@ -11,7 +11,7 @@ const getData = async (link) => {
 <span class="visually-hidden"></span>
 </div> `
 
-getData("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
+getData("https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
     .then((e) => {
         data = e
         if (data === null || data === undefined || data.length === 0) {
